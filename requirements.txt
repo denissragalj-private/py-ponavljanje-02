@@ -1,0 +1,4 @@
+qrcode[pil]
+python-barcode[images]
+pdf417
+Pillow
