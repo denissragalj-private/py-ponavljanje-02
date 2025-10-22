@@ -625,7 +625,7 @@ if __name__ == "__main__":
     
     # === KREIRANJE PRVOG RAČUNA ===
     invoice = Invoice(
-        invoice_number="INV-1001",
+        invoice_number="1001-005",
         invoice_date="2024-06-15",
         due_date="2024-07-15",
         client=pero_peric,
@@ -681,10 +681,10 @@ if __name__ == "__main__":
         payment_info = PaymentDetails(
             iban="HR1234567890123456789",
             model="HR00",
-            reference_number=f"{inv.invoice_number}-2024",
+            reference_number=f"{inv.invoice_number}-2025",
             amount=inv.total,
             receiver_name="Steel Works d.o.o.",
-            purpose=f"Plaćanje po računu {inv.invoice_number}"
+            purpose=f"Placanje po racunu {inv.invoice_number}"
         )
         
         # Izvezi u PDF
