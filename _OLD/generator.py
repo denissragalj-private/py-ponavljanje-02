@@ -65,7 +65,8 @@ def generate_hub30_payload(doc):
 
     # Koristi ASCII-safe opis (bez hrvatskih znakova)
     description = f"Racun br. {poziv_na_broj}"
-
+    company_street = "Racka 1C"  # Privremeno, može se prilagoditi
+    company_postal_code_and_city = "10250 Ježdovec"  # Privremeno, može se prilagoditi
     lines = [
         "HRVHUB30",  # 1. Identifikator
         "EUR",  # 2. Valuta
@@ -74,8 +75,8 @@ def generate_hub30_payload(doc):
         "",  # 5. Ulica platitelja
         "",  # 6. broj pošte i mjesto platitelja
         company,  # 7. Naziv primatelja
-        "",  # 8. Ulica primatelja
-        "",  # 9. Broj pošte i mjesto primatelja
+        company_street,  # 8. Ulica primatelja
+        company_postal_code_and_city,  # 9. Broj pošte i mjesto primatelja
         iban,  # 13. IBAN primatelja
         "HR00",  # 10. Model primatelja
         poziv_na_broj,  # 11. Poziv na broj primatelja
