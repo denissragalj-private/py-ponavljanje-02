@@ -245,13 +245,13 @@ if __name__ == "__main__":
 
     # Spremi slike
     if hub30_barcode:
-        save_data_uri_to_file(hub30_barcode, "hub30_standard.png")
+        save_data_uri_to_file(hub30_barcode, "./_OLD/Barcode/hub30_standard.png")
     if bcd_qr:
-        save_data_uri_to_file(bcd_qr, "bcd_qr_standard.png")
+        save_data_uri_to_file(bcd_qr, "./_OLD/Barcode/bcd_qr_standard.png")
     if simple_barcode:
-        save_data_uri_to_file(simple_barcode, "barcode_standard.png")
+        save_data_uri_to_file(simple_barcode, "./_OLD/Barcode/barcode_standard.png")
     if simple_qr:
-        save_data_uri_to_file(simple_qr, "qr_standard.png")
+        save_data_uri_to_file(simple_qr, "./_OLD/Barcode/qr_standard.png")
 
     print("\nGeneriranje barkodova za Montažu...")
     print(f"IBAN: {get_iban_by_department(doc_montaza)}")
@@ -261,9 +261,9 @@ if __name__ == "__main__":
     bcd_montaza = get_bcd_qr(doc_montaza)
 
     if hub30_montaza:
-        save_data_uri_to_file(hub30_montaza, "hub30_montaza.png")
+        save_data_uri_to_file(hub30_montaza, "./_OLD/Barcode/hub30_montaza.png")
     if bcd_montaza:
-        save_data_uri_to_file(bcd_montaza, "bcd_qr_montaza.png")
+        save_data_uri_to_file(bcd_montaza, "./_OLD/Barcode/bcd_qr_montaza.png")
 
     print("\nGotovo! Provjerite generirane PNG datoteke.")
 
